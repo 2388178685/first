@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import "public.less";
+.header{
+    height: .88rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem .23rem 0px;
+    
+    .jiantoul{
+        display: block;
+        height: .32rem;
+        width: .15rem;
+        background: url(../images/arrowLeft.jpg) no-repeat;
+        background-size: .15rem .32rem;    
+    }
+    .logo{
+        >img{
+            width: 1.5rem;
+            height: auto;
+        }
+    }
+    .menu{
+        span{}
+    }
+}
+// search
+.find{
+    position: relative;
+    em{
+        display: inline-block;
+        width: .26rem;
+        height: .27rem;
+        background: url(../images/search.jpg)no-repeat;
+        background-size: .26rem .27rem;
+        position: absolute;
+        top: .48rem;
+        left: 2.5rem;
+        
+    }
+    .search{
+        width: 6.25rem;
+        height: .77rem;
+        background: #f26b11;
+        border-radius: .33rem;
+        margin: .22rem 0rem 0rem .63rem;
+        text-align: center;
+        font: .26rem/.77rem "微软雅黑";
+        &::placeholder{
+                color: white;    
+        }
+
+    }
+}
+//main
+.main{
+    margin-bottom: 3.17rem;
+    li{
+        margin: 0rem .23rem 0rem .33rem;
+        padding: .54rem 0rem .20rem 0rem;
+        border-bottom: 1px solid #d1d1d1;
+        a{
+            display: block;
+            display: flex;
+            justify-content: space-between;
+            img{
+                width:auto;
+                height: 1.53rem;
+            }
+            .text{
+                margin-left: .44rem;
+                .name{
+                    font: .26rem/.33rem "微软雅黑";
+                    color: #343434;
+                }
+                .price{
+                    font: .3rem/.54rem Arial;
+                    color: #e5393c;
+                }
+                .ping{
+                    font: .26rem/.39rem Arial;
+                    color: #9a9a9a;
+                    span{
+                        font: .24rem/.39rem "微软雅黑";
+                        
+
+                    }
+                }
+            }
+        }
+    }
+}
+.footer{
+    a{
+        .active{
+            color: #f26b11;
+        }
+    }
+}

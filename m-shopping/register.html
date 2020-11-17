@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/remScale.js"></script>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div class="page" id="app">
+        <div class="header">
+            <a href="#"><em></em></a>
+
+            <h3>注册</h3>
+
+            <p class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </p>
+        </div>
+        <!-- main -->
+        <div class="main">
+            <div class="name">
+                昵称<input type="text" v-model='user.uname'>
+            </div>
+            <div class="telphone">
+                手机号<input type="text" v-model ='user.tel'>
+            </div>
+            <div class="pwd">
+                密码<input type="password" v-model='user.pwd'>
+            </div>
+            <div class="yanzhengma">
+                验证码<input type="text" v-model='user.yanzhengma'>
+                <span>重新发送</span>
+            </div>
+            <div class="xieyi">
+                <input type="checkbox" v-model='user.xieyi'>我已阅读并同意以下条款
+            </div>
+
+            <div>
+                <button class="btn" @click='next'>下一步</button>
+            </div>
+
+        </div>
+
+
+
+        <!-- footer -->
+        <div class="footer">
+            <a href="index.html">
+                <img src="images/iconIndex.jpg" alt="pic">
+                <p>首页</p>
+            </a>
+            <a href="car.html">
+                <img src="images/iconCart2.jpg" alt="pic">
+                <p class="active">购物车</p>
+            </a>
+            <a href="my.html">
+                <img src="images/iconMine.jpg" alt="pic">
+                <p>我的</p>
+            </a>
+        </div>
+    </div>
+<script src="./node/register.js"></script>
+</body>
+
+</html>

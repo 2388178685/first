@@ -1,0 +1,178 @@
+@charset "utf-8";
+@import "public.less";
+.header{
+    height: .88rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f26b11;
+    padding: 0.4rem .23rem 0px;
+    em{
+        display: block;
+        height: .29rem;
+        width: .17rem;
+        background: url(../images/arrowLeft2.jpg) no-repeat;
+        background-size: .17rem .29rem;
+    }
+    h3{
+        font: .35rem/.29rem "微软雅黑";
+        color: white;
+    }
+    .menu{
+        span{
+            background: white;
+        }
+
+    }
+    
+}
+// main
+.main{
+    overflow: hidden;
+    margin-top: .25rem;
+    li{
+       width: 113.2%;
+       display: flex;
+        .active{
+            width: 7.5rem;
+            display: flex;
+            justify-content: space-between;
+            // padding: 0rem .22rem;
+            height: 1.72rem;
+            margin-top: .25rem;
+            box-shadow: 0px 0px 5px #e6e3e3;
+            em{
+                display: inline-block;
+                width: .4rem;
+                height: .4rem;
+                background: url(../images/dui_03.jpg)no-repeat;
+                background-size: .4rem .4rem;
+                margin-top: .66rem;
+                margin-left: .22rem;
+            }
+            img{
+                height: 1.04rem;
+                width: auto;
+                margin-top: .4rem;
+            }
+            .text{
+                .shop{
+                    margin-top: .03rem;
+                    font: .26rem/.53rem "微软雅黑";
+                }
+                .gui{
+                    font: .23rem/.54rem  "微软雅黑";
+                }
+                .price{
+                    font: .32rem/.45rem Arial;
+                }
+            }
+            .number{
+                margin-right: .22rem;
+                width: 2.1rem;
+                height: .58rem;
+                border: 1px solid #333333;
+                border-radius: .02rem;
+                display: flex;
+                justify-content: space-between;
+                margin-top: .82rem;
+                div{
+                    width: .62rem;
+                    height:.58rem;
+                    border-right: 1px solid #333333;
+                    text-align: center;
+                    line-height: .58rem;
+                }
+                input{
+                    width: .78rem;
+                    height: .58rem;
+                }
+                div:nth-child(3){
+                    border-left: 1px solid #333333;
+                    border-right: none;
+                }
+            }
+        }
+        .delete{
+            width: .9rem;
+            height: 1.72rem;
+            font: .24rem/1.72rem "微软雅黑";
+            background: #e43a3d;
+            text-align: center;
+            color: white;
+            margin-top: .25rem;
+            
+        }
+
+    }
+    .two{
+        transform: translate(-0.9rem);
+    }
+    .three{
+        .active{
+            em{
+                display: inline-block;
+                width: .4rem;
+                height: .4rem;
+                background: url(../images/circle_06.jpg) no-repeat;
+                background-size: .4rem .4rem;
+                margin-top: .66rem;
+                margin-left: .22rem;
+                }
+        }
+        
+    }
+}
+// pay
+.pay{
+    margin-bottom: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.0rem;
+    .select{
+        em{
+        display: inline-block;
+        width: .4rem;
+        height: .4rem;
+        background: url(../images/dui_03.jpg)no-repeat;
+        background-size: .4rem .4rem;
+        margin-left: .25rem;
+        }
+        span{
+            font: .24rem/1.15rem "微软雅黑";
+        }
+        
+    }
+    .pri{
+        p{
+            font: .3rem/.47rem "微软雅黑";
+            margin-top: .15rem;
+            text-align: right;
+        }
+        .you{
+            font: .20rem/.36rem "微软雅黑";
+            color: #bcbcbc;
+            margin-top: 0;
+
+        }
+    }
+    .suan{
+        text-align: center;
+        a{
+            display: inline-block;
+            height: 1.15rem;
+            width: 2.48rem;
+            background: #f26b11;
+            font: .3rem/1.15rem "微软雅黑";
+            color: white;
+        }
+    }
+    
+}
+.footer{
+    a{
+        .active{
+            color: #f26b11;
+        }
+    }
+}

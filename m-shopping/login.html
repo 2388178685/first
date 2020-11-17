@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/remScale.js"></script>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div class="page" id="app">
+
+        <div class="header">
+            <a href="#"><em></em></a>
+
+            <h3>登录</h3>
+
+            <p class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </p>
+        </div>
+        <!-- main -->
+        <div class="main">
+            <div class="telphone">
+                手机号<input type="text" v-model='user.tel'>
+            </div>
+            <div class="pwd">
+                密码<input type="password" v-model='user.pwd'>
+            </div>
+            <a href="javascript:;">忘记密码</a>
+            <div>
+                <button class="btn" @click='login'>登录</button>
+              
+            </div>
+           
+        </div>
+
+
+
+        <!-- footer -->
+        <div class="footer">
+            <a href="index.html">
+                <img src="images/iconIndex.jpg" alt="pic">
+                <p>首页</p>
+            </a>
+            <a href="car.html">
+                <img src="images/iconCart2.jpg" alt="pic">
+                <p class="active">购物车</p>
+            </a>
+            <a href="my.html">
+                <img src="images/iconMine.jpg" alt="pic">
+                <p>我的</p>
+            </a>
+        </div>
+    </div>
+    <script src="./node/login.js"></script>
+
+</body>
+
+</html>
